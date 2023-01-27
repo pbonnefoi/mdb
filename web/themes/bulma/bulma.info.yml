@@ -1,0 +1,15 @@
+name: bulma
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - bulma/global-styling
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.0.2'
+regions:
+  header: Header
+  breadcrumb: Breadcrumb
+  content_above: Content Above
+  content: Content
+  footer: Footer

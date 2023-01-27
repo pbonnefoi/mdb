@@ -1,0 +1,31 @@
+.block-local-tasks-block {
+  ul {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    top: auto;
+    width: auto;
+    background-color: black;
+    z-index: 1000;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 0.5rem;
+      position: relative;
+      margin: 0;
+      a {
+        color: white;
+        padding: 0.5rem;
+        display: block;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+

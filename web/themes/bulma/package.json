@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "node-sass --omit-source-map-url scss/styles.scss css/styles.css --output-style compressed",
+    "start": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bulma": "^0.9.4",
+    "node-sass": "^7.0.1",
+    "swiper": "^8.3.1"
+  }
+}

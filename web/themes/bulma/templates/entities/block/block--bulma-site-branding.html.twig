@@ -1,0 +1,50 @@
+{#
+/**
+ * @file
+ * Theme override for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+{% block content %}
+{%
+  set classes = [
+  'container',
+  'p-3',
+  'my-0',
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+  <div class="navbar-brand">
+    <div class="is-size-3-desktop is-size-4-touch logo is-flex is-flex-direction-row px-3">
+      {% if site_logo %}
+        <div>
+          <a href="{{ path('<front>') }}" rel="home">
+            <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="image-logo" />
+          </a>
+        </div>
+      {% endif %}
+      <div>
+        <a class="navbar-item" href="{{ path('<front>') }}" rel="home">
+          {{ site_name }}<br>
+          {{ site_slogan }}
+        </a>
+      </div>
+    </div>
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</div>
+{% endblock %}
