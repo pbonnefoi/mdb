@@ -1,5 +1,11 @@
 @charset "utf-8";
 @import "admin/admin.scss";
 @import "variables/colors.scss";
+@import "variables/extra.scss";
+@import "extra/properties.scss";
+@import "components/footer.scss";
 @import "components/logo.scss";
+@import "components/entry.scss";
+@import "components/map.scss";
 @import "../node_modules/bulma/bulma.sass";
+

@@ -30,6 +30,7 @@
         "drupal/paragraphs": "^1.12",
         "drupal/rdf": "^2.1",
         "drupal/redirect": "^1.7",
+        "drupal/token": "^1.11",
         "drush/drush": "^11.4",
         "enyo/dropzone": "^5.9"
     },

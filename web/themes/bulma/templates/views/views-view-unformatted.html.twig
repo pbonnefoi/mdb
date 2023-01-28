@@ -18,13 +18,15 @@
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-{% for row in rows %}
-  {%
-    set row_classes = [
+<div class="columns is-multiline is-variable is-6 mb-6 mt-5">
+  {% for row in rows %}
+    {%
+      set row_classes = [
       default_row_class ? 'views-row',
     ]
-  %}
-  <div{{ row.attributes.addClass(row_classes) }}>
-    {{- row.content -}}
-  </div>
-{% endfor %}
+    %}
+    <div class="column p-4 is-one-third">
+      {{- row.content -}}
+    </div>
+  {% endfor %}
+</div>

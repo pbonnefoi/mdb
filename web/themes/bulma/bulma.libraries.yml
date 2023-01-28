@@ -3,4 +3,4 @@ global-styling:
     component:
       css/styles.css: {}
   js:
-    js/iconic.js: {}
+    js/map.js: {}
