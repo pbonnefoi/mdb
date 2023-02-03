@@ -11,8 +11,8 @@
       });
 
       $(document).mousemove(function(e) {
-        $('#info-box').css('top',e.pageY-$('#info-box').height()-30);
-        $('#info-box').css('left',e.pageX-($('#info-box').width())/2);
+        $('#info-box').css('top',e.pageY-$('#info-box').height()-200);
+        $('#info-box').css('left',e.pageX-($('#info-box').width()));
       }).mouseover();
 
       var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;

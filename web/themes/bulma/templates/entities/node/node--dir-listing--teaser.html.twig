@@ -67,28 +67,12 @@
  *
  */
 #}
-{%
-  set classes = [
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
-    node.isPromoted() ? 'node--promoted',
-    node.isSticky() ? 'node--sticky',
-    not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-  ]
-%}
-{{ attach_library('iconic_theme/node') }}
-<article{{ attributes.addClass(classes) }}>
-  <div class="container p-3">
-    <div class="is-flex is-justify-content-center is-flex-direction-column">
-      <h2 class="title is-3 heading">
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
-      <div{{ content_attributes.addClass('node__content') }}>
-        {{ content|without('field_us_state') }}
-      </div>
+<article class="has-background-primary is-rounded entry">
+  <a href="{{ url }}" rel="bookmark">
+    <div class="card-content">
+      <h3 class="title is-5 heading has-text-white">
+        {{ label }}
+      </h3>
     </div>
-
-  </div>
-
+  </a>
 </article>

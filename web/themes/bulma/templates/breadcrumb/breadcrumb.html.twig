@@ -16,7 +16,7 @@
         {% if item.url %}
           <a href="{{ item.url }}" class="is-size-6">{{ item.text }}</a>
         {% else %}
-          {{ item.text }}
+          <span class="is-size-6 px-3">{{ item.text }}</span>
         {% endif %}
       </li>
     {% endfor %}

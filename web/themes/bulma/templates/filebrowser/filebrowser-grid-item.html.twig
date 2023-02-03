@@ -1,6 +1,6 @@
-<div class="filebrowser-grid-item-wrapper clearfix">
-    <a class="filebrowser-image-link" href="{{ data.href }}">{{ data.thumbnail }}</a>
+<div class="filebrowser-grid-item-wrapper clearfix has-background-primary is-rounded entry m-3 text-align-center">
+    <a class="filebrowser-image-link px-3 has-background-white" href="{{ data.href }}">{{ data.thumbnail }}</a>
     {% if data.hide_title == false %}
-        <div class="filebrowser-grid-item-title title is-5 heading">{{ data.title }}</div>
+        <div class="filebrowser-grid-item-title title is-5 heading has-text-white p-3">{{ data.title }}</div>
     {% endif %}
 </div>

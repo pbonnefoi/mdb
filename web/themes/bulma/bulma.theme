@@ -91,7 +91,7 @@ function bulma_preprocess_node(&$variables) {
     ];
     $query = \Drupal::database()->select('node__field_us_state', 'n');
     $query->addField('n', 'field_us_state_value', 'stateCode');
-    $query->groupBy('n.field_us_state_value');
-    $variables['availableStates'] = $query->execute()->fetchAllKeyed(0, 0);
+    $query->addField('n', 'entity_id', 'nid');
+    $variables['availableStates'] = $query->execute()->fetchAllKeyed();
   }
 }
