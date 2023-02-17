@@ -1,0 +1,10 @@
+.js {
+  input{
+    &.form-autocomplete {
+      background-position: 98% center;
+      &.ui-autocomplete-loading {
+        background-position: 98% center;
+      }
+    }
+  }
+}

@@ -1,3 +1,11 @@
 .is-rounded {
   border-radius: $radius;
 }
+
+.button {
+  &.is-secondary {
+    background-color: $secondary;
+    border-color: transparent;
+    color: #fff;
+  }
+}

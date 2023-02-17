@@ -1,0 +1,19 @@
+name: 'Station Schedule'
+type: module
+description: 'Module to allow radio station scheduling and playlists.'
+package: Station
+# version: 8.x-1.x
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - station
+  - station_program
+features:
+  bundle: station
+  required:
+    - views.view.schedules
+
+# Information added by Drupal.org packaging script on 2022-07-08
+version: '8.x-2.1-beta1'
+project: 'station'
+datestamp: 1657240870

@@ -1,0 +1,12 @@
+name: Station
+type: module
+description: 'Core of station module for running an internet radio station.'
+package: Station
+# version: 8.x-1.x
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+
+# Information added by Drupal.org packaging script on 2022-07-08
+version: '8.x-2.1-beta1'
+project: 'station'
+datestamp: 1657240870

@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Theme override for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ */
+#}
+{%
+  set classes = [
+    'input',
+  ]
+%}
+<div class="field-body">
+  <div class="field">
+    <div class="control">
+      <input{{ attributes.addClass(classes) }} />{{ children }}
+    </div>
+  </div>
+</div>

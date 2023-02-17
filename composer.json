@@ -28,10 +28,12 @@
         "drupal/filefield_paths": "^1.0@beta",
         "drupal/focal_point": "^2.0@alpha",
         "drupal/paragraphs": "^1.12",
+        "drupal/pathauto": "^1.11",
         "drupal/rdf": "^2.1",
         "drupal/redirect": "^1.7",
         "drupal/token": "^1.11",
         "drupal/viewsreference": "^2.0@beta",
+        "drupal/yearonly": "^9.1",
         "drush/drush": "^11.4",
         "enyo/dropzone": "^5.9"
     },
