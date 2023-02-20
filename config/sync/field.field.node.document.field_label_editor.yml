@@ -1,0 +1,29 @@
+uuid: 6a032318-99fd-44ca-8bfa-15880193f74d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_label_editor
+    - node.type.document
+    - taxonomy.vocabulary.label_editeur
+id: node.document.field_label_editor
+field_name: field_label_editor
+entity_type: node
+bundle: document
+label: 'Label(s) / Éditeur(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      label_editeur: label_editeur
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,17 @@
+uuid: df63d0f8-38e4-4dca-9baa-612c6bd45f33
+langcode: fr
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 480x720
+label: 480x720
+effects:
+  7cd4c98a-5c11-436b-84d2-54024bb27c12:
+    uuid: 7cd4c98a-5c11-436b-84d2-54024bb27c12
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 720
+      crop_type: focal_point

@@ -1,0 +1,29 @@
+uuid: 56ae9ce4-d653-4ce6-b814-eb4c8d5100c6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_artistes_auteurs
+    - node.type.document
+    - taxonomy.vocabulary.artiste_auteur
+id: node.document.field_artistes_auteurs
+field_name: field_artistes_auteurs
+entity_type: node
+bundle: document
+label: 'Artiste(s) / Auteur(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      artiste_auteur: artiste_auteur
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

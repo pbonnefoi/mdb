@@ -1,0 +1,8 @@
+uuid: f835614c-08b0-4940-8a9d-821fdea2bf1f
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Label / Éditeur'
+vid: label_editeur
+description: ''
+weight: 0

@@ -1,0 +1,22 @@
+uuid: 1bd038d4-cd6e-4d64-ba66-1c3052cbed2a
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bulma
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: bulma_primary_local_tasks
+theme: bulma
+region: header
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

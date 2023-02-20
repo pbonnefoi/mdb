@@ -1,0 +1,25 @@
+uuid: 6d5b2f5a-159c-43d6-9069-e629e62966b1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_cover
+    - field.field.node.page.field_modules
+    - node.type.page
+  module:
+    - user
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_cover: true
+  field_modules: true
+  langcode: true

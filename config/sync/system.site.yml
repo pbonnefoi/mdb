@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
+langcode: fr
+uuid: 4712ecf1-b29c-4a59-9c80-b385d5c0ac50
+name: 'Musée du Blues'
+mail: pierre.bonnefoi@gmail.com
+slogan: 'Centre de documentation'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: fr

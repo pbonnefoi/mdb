@@ -1,0 +1,31 @@
+uuid: b54a619c-41dd-4bbe-8f5a-08e252b1a938
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing.field_cover
+    - node.type.landing
+  module:
+    - user
+id: node.landing.teaser
+targetEntityType: node
+bundle: landing
+mode: teaser
+content:
+  field_cover:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: landing_push
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

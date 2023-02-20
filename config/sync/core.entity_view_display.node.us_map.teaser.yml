@@ -1,0 +1,23 @@
+uuid: dfc507bf-cf16-422d-9009-28ff6513134b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.us_map.field_state_view
+    - node.type.us_map
+  module:
+    - user
+id: node.us_map.teaser
+targetEntityType: node
+bundle: us_map
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_state_view: true
+  langcode: true

@@ -1,0 +1,20 @@
+uuid: 27cab3fb-b5bf-44cd-b4d4-bbcba2483898
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_artistes_auteurs
+field_name: field_artistes_auteurs
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

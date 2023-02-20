@@ -1,0 +1,33 @@
+uuid: 3633fb03-4f46-4589-baae-74654d34ca31
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.document_thumbnail
+    - field.field.media.image.field_media_image
+    - image.style.document_thumbnail
+    - media.type.image
+  module:
+    - image
+id: media.image.document_thumbnail
+targetEntityType: media
+bundle: image
+mode: document_thumbnail
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: document_thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

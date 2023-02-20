@@ -1,0 +1,11 @@
+uuid: 2b8a54e2-cf6c-4da8-8227-854871d810a7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.label_editeur
+id: taxonomy_term.label_editeur
+target_entity_type_id: taxonomy_term
+target_bundle: label_editeur
+default_langcode: site_default
+language_alterable: false

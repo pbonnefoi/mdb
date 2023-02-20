@@ -1,0 +1,49 @@
+uuid: c5db6fa0-dd5d-4723-84bc-91839b5436a7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_state_view
+    - node.type.us_map
+  module:
+    - viewsreference
+id: node.us_map.field_state_view
+field_name: field_state_view
+entity_type: node
+bundle: us_map
+label: 'State View'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+  preselect_views:
+    content: content
+    content_recent: 0
+    files: 0
+    frontpage: 0
+    media: 0
+    media_library: 0
+    photos_by_state: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    argument: argument
+    pager: 0
+    limit: 0
+    offset: 0
+    title: 0
+field_type: viewsreference

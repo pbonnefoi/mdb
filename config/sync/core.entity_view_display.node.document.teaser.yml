@@ -1,0 +1,41 @@
+uuid: 2d463c4b-611e-4c89-b122-8a79c70e25e2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.document.field_artistes_auteurs
+    - field.field.node.document.field_cover
+    - field.field.node.document.field_description
+    - field.field.node.document.field_document_type
+    - field.field.node.document.field_label_editor
+    - field.field.node.document.field_year
+    - node.type.document
+  module:
+    - user
+id: node.document.teaser
+targetEntityType: node
+bundle: document
+mode: teaser
+content:
+  field_cover:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: document_thumbnail
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_artistes_auteurs: true
+  field_description: true
+  field_document_type: true
+  field_label_editor: true
+  field_year: true
+  langcode: true

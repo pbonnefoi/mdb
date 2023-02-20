@@ -1,0 +1,19 @@
+uuid: dc89fb2d-47b6-47f3-80a1-6214edbdcdee
+langcode: fr
+status: true
+dependencies:
+  module:
+    - filebrowser
+    - media
+    - system
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Utilisateur anonyme'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'view listings'
+  - 'view media'
+  - 'view published filebrowser metadata entity entities'

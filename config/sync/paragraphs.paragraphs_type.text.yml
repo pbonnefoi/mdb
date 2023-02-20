@@ -1,0 +1,10 @@
+uuid: 11bf1ef7-d185-40fd-b31e-ab70c61daee1
+langcode: fr
+status: true
+dependencies: {  }
+id: text
+label: Texte
+icon_uuid: null
+icon_default: null
+description: 'Rajouter du texte'
+behavior_plugins: {  }

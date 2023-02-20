@@ -1,0 +1,17 @@
+uuid: 894b474c-70ab-41f3-ad23-b17d83c7254e
+langcode: fr
+status: true
+dependencies: {  }
+id: remote_video
+label: 'Vidéo distante'
+description: ''
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_oembed_video
+  thumbnails_directory: 'public://oembed_thumbnails/[date:custom:Y-m]'
+  providers:
+    - YouTube
+field_map:
+  title: name

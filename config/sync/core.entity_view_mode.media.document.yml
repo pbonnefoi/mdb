@@ -1,0 +1,10 @@
+uuid: 76dadd1d-1e56-400b-9208-e66b3d1db231
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.document
+label: Document
+targetEntityType: media
+cache: true

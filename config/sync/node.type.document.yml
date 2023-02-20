@@ -1,0 +1,18 @@
+uuid: b679a3ec-dc29-4299-88c3-e89755e2ea2f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Document
+type: document
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

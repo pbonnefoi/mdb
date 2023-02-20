@@ -1,0 +1,11 @@
+uuid: fee0a943-af50-4529-a9b3-3ef0ef0888a6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.image
+id: media.image
+target_entity_type_id: media
+target_bundle: image
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: c92d3197-8ed0-4fed-b001-0599945a9896
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'US Map'
+type: us_map
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,11 @@
+uuid: 9519351e-3b1b-485b-a832-136be06060dd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.artiste_auteur
+id: taxonomy_term.artiste_auteur
+target_entity_type_id: taxonomy_term
+target_bundle: artiste_auteur
+default_langcode: site_default
+language_alterable: false

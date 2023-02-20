@@ -1,0 +1,30 @@
+uuid: 7e291011-e244-4fd2-b990-579f544c0889
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.landing.field_cover
+    - node.type.landing
+  module:
+    - user
+id: node.landing.default
+targetEntityType: node
+bundle: landing
+mode: default
+content:
+  field_cover:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: 21618e86-8b2a-439d-b01c-878744426483
+langcode: fr
+status: true
+dependencies:
+  config:
+    - filter.format.simple_html
+  module:
+    - filebrowser
+    - filter
+    - media
+    - system
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Utilisateur authentifié'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format simple_html'
+  - 'view listings'
+  - 'view media'
+  - 'view published filebrowser metadata entity entities'

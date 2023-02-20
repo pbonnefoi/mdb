@@ -1,0 +1,23 @@
+uuid: 6a615087-c46c-478b-8ab0-5f17ec980ae2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.document
+  module:
+    - yearonly
+id: node.document.field_year
+field_name: field_year
+entity_type: node
+bundle: document
+label: Année
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  yearonly_from: '1900'
+  yearonly_to: now
+field_type: yearonly

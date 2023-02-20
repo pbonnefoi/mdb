@@ -1,0 +1,21 @@
+uuid: cace4d30-dfef-4166-8c71-88e14f4f171c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_us_state
+    - node.type.dir_listing
+  module:
+    - options
+id: node.dir_listing.field_us_state
+field_name: field_us_state
+entity_type: node
+bundle: dir_listing
+label: 'US State'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

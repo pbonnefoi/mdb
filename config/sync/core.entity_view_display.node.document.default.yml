@@ -1,0 +1,75 @@
+uuid: 78756e59-268b-47a1-aae0-1e079d71ba11
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.document.field_artistes_auteurs
+    - field.field.node.document.field_cover
+    - field.field.node.document.field_description
+    - field.field.node.document.field_document_type
+    - field.field.node.document.field_label_editor
+    - field.field.node.document.field_year
+    - node.type.document
+  module:
+    - text
+    - user
+    - yearonly
+id: node.document.default
+targetEntityType: node
+bundle: document
+mode: default
+content:
+  field_artistes_auteurs:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_cover:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: document
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_document_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_label_editor:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_year:
+    type: yearonly_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

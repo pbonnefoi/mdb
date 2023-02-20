@@ -1,0 +1,15 @@
+uuid: bdf48e25-ebd1-418f-b406-71820d9742a7
+langcode: fr
+status: true
+dependencies: {  }
+name: document_thumbnail
+label: 'Document Thumbnail'
+effects:
+  e10bde38-1041-4191-ac90-c5a78a182b07:
+    uuid: e10bde38-1041-4191-ac90-c5a78a182b07
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: 400
+      upscale: true

@@ -27,6 +27,7 @@
         "drupal/filebrowser": "3.1.x-dev@dev",
         "drupal/filefield_paths": "^1.0@beta",
         "drupal/focal_point": "^2.0@alpha",
+        "drupal/media_remote": "^1.6",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.11",
         "drupal/rdf": "^2.1",

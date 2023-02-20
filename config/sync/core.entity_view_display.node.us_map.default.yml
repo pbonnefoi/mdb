@@ -1,0 +1,31 @@
+uuid: 17730c89-c512-443f-8817-b70abf9486d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.us_map.field_state_view
+    - node.type.us_map
+  module:
+    - user
+    - viewsreference
+id: node.us_map.default
+targetEntityType: node
+bundle: us_map
+mode: default
+content:
+  field_state_view:
+    type: viewsreference_formatter
+    label: above
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

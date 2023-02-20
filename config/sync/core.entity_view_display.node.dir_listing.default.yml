@@ -1,0 +1,39 @@
+uuid: b24dd8db-88ca-48e0-b93a-dc701a839c85
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.dir_listing.field_us_state
+    - node.type.dir_listing
+  module:
+    - options
+    - user
+id: node.dir_listing.default
+targetEntityType: node
+bundle: dir_listing
+mode: default
+content:
+  field_us_state:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  filebrowser_file_list:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  filebrowser_statistics:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,10 @@
+uuid: 13644204-b1f5-4a9f-adc3-0268a85946fe
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.landing_push
+label: 'Landing Push'
+targetEntityType: media
+cache: true

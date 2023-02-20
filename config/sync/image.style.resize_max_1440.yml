@@ -1,0 +1,15 @@
+uuid: 3d4dd6d5-28e3-4acd-a6a8-ca6d5b39c697
+langcode: fr
+status: true
+dependencies: {  }
+name: resize_max_1440
+label: 'Resize max 1440'
+effects:
+  52aa0820-e321-428b-9c67-f732e809900c:
+    uuid: 52aa0820-e321-428b-9c67-f732e809900c
+    id: image_scale
+    weight: 2
+    data:
+      width: 1440
+      height: 1080
+      upscale: false

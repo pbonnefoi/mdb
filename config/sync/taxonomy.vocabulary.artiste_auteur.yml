@@ -1,0 +1,8 @@
+uuid: 1b70f048-2a9d-45fb-a3fe-75c049e0f29d
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Artiste / Auteur'
+vid: artiste_auteur
+description: ''
+weight: 0

@@ -1,0 +1,22 @@
+uuid: f2baecd4-0ad2-44cc-bd1c-6e2b4a6ef339
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.us_map
+id: node.us_map.promote
+field_name: promote
+entity_type: node
+bundle: us_map
+label: "Promu en page d'accueil"
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

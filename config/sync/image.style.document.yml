@@ -1,0 +1,15 @@
+uuid: 7dbb6933-7531-4ffd-8b0c-7ba536a357d4
+langcode: fr
+status: true
+dependencies: {  }
+name: document
+label: Document
+effects:
+  b4f5b826-fa4f-4e58-a090-ebe90f81e8c8:
+    uuid: b4f5b826-fa4f-4e58-a090-ebe90f81e8c8
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: 600
+      upscale: true

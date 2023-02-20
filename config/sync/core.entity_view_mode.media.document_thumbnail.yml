@@ -1,0 +1,10 @@
+uuid: 5b41353f-e5e8-4623-ba70-0a40bfa882b9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.document_thumbnail
+label: 'Document Thumbnail'
+targetEntityType: media
+cache: true

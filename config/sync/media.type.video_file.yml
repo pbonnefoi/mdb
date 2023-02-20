@@ -1,0 +1,14 @@
+uuid: d1d8e1a1-b357-4ec4-9e40-0eb0e83ce826
+langcode: fr
+status: true
+dependencies: {  }
+id: video_file
+label: 'Fichier Vidéo'
+description: ''
+source: video_file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_video_file
+field_map:
+  name: name

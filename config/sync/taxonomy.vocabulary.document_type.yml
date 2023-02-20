@@ -1,0 +1,8 @@
+uuid: dce8d3d3-4c14-4b59-9d40-8be08b8822df
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type de document'
+vid: document_type
+description: ''
+weight: 0
