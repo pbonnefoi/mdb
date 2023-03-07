@@ -5,8 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.landing.field_cover
+    - field.field.node.landing.field_link
     - node.type.landing
   module:
+    - link
     - user
 id: node.landing.teaser
 targetEntityType: node
@@ -21,6 +23,18 @@ content:
       link: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }

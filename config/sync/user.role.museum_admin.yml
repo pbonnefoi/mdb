@@ -1,0 +1,69 @@
+uuid: a09fc2a9-8b19-4c14-9c03-c03e1b9ae5f0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video_file
+    - node.type.dir_listing
+    - node.type.document
+    - node.type.page
+    - taxonomy.vocabulary.artiste_auteur
+    - taxonomy.vocabulary.genre
+    - taxonomy.vocabulary.label_editeur
+    - taxonomy.vocabulary.tag
+  module:
+    - filebrowser
+    - media
+    - node
+    - system
+    - taxonomy
+    - toolbar
+id: museum_admin
+label: 'Administrateur du musée'
+weight: 2
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access media overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer taxonomy'
+  - 'create dir_listing content'
+  - 'create document content'
+  - 'create folders'
+  - 'create image media'
+  - 'create listings'
+  - 'create media'
+  - 'create page content'
+  - 'create remote_video media'
+  - 'create terms in artiste_auteur'
+  - 'create terms in genre'
+  - 'create terms in label_editeur'
+  - 'create terms in tag'
+  - 'create video_file media'
+  - 'delete any dir_listing content'
+  - 'delete any document content'
+  - 'delete any page content'
+  - 'delete own dir_listing content'
+  - 'delete own document content'
+  - 'delete own page content'
+  - 'download files'
+  - 'edit any dir_listing content'
+  - 'edit any document content'
+  - 'edit any listings'
+  - 'edit any page content'
+  - 'edit own dir_listing content'
+  - 'edit own document content'
+  - 'edit own page content'
+  - 'rename files'
+  - 'revert dir_listing revisions'
+  - 'revert document revisions'
+  - 'revert page revisions'
+  - 'update any media'
+  - 'update media'
+  - 'view dir_listing revisions'
+  - 'view document revisions'
+  - 'view page revisions'
+  - 'view the administration theme'

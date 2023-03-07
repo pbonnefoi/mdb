@@ -5,6 +5,7 @@ dependencies:
   module:
     - filebrowser
     - media
+    - search
     - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
@@ -14,6 +15,7 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
+  - 'search content'
   - 'view listings'
   - 'view media'
   - 'view published filebrowser metadata entity entities'

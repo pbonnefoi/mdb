@@ -1,0 +1,31 @@
+id: albums
+label: Import albums from Last.fm API
+migration_group: migrate_music
+
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  urls:
+    - 'https://ws.audioscrobbler.com/2.0/?method=tag.gettopalbums&tag=blues&api_key=b2d69c38dba55c2edfe9c8f7442435bc&format=json'
+  item_selector: albums
+  fields:
+    - name: name
+      label: 'Title'
+      selector: /name
+    - name: artist
+      label: 'Artist'
+      selector: /artist/name
+    - name: image
+      label: 'Album Cover'
+      selector: /image/product_id_for_sku/value
+
+process:
+  title: name
+  artist: artists.0.name
+  label:
+    plugin: default_value
+    default_value: 'Spotify'
+
+destination:
+  plugin: entity:album

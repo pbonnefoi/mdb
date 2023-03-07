@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.field_cover
+    - field.field.node.page.field_is_pedagoblues
     - field.field.node.page.field_modules
     - node.type.page
   module:
@@ -14,12 +15,21 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
+  field_cover:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: landing_push
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
-  field_cover: true
+  field_is_pedagoblues: true
   field_modules: true
   langcode: true

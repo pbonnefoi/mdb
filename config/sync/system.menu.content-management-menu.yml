@@ -1,0 +1,8 @@
+uuid: f564c270-dba5-4e3b-b249-1d88e9921dec
+langcode: fr
+status: true
+dependencies: {  }
+id: content-management-menu
+label: 'Gestion du contenu'
+description: ''
+locked: false

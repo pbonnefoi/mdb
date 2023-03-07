@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.us_map.field_cover
     - field.field.node.us_map.field_state_view
     - node.type.us_map
   module:
@@ -19,5 +20,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_cover: true
   field_state_view: true
   langcode: true

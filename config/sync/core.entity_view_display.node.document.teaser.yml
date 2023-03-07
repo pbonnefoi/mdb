@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.document.field_cover
     - field.field.node.document.field_description
     - field.field.node.document.field_document_type
+    - field.field.node.document.field_genre
     - field.field.node.document.field_label_editor
     - field.field.node.document.field_year
     - node.type.document
@@ -36,6 +37,7 @@ hidden:
   field_artistes_auteurs: true
   field_description: true
   field_document_type: true
+  field_genre: true
   field_label_editor: true
   field_year: true
   langcode: true

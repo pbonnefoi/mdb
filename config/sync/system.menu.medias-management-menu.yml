@@ -1,0 +1,8 @@
+uuid: c7a1e273-f401-4765-88c6-8ac78f3d323d
+langcode: fr
+status: true
+dependencies: {  }
+id: medias-management-menu
+label: 'Gestion des médias'
+description: ''
+locked: false

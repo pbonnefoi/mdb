@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.document.field_cover
     - field.field.node.document.field_description
     - field.field.node.document.field_document_type
+    - field.field.node.document.field_genre
     - field.field.node.document.field_label_editor
     - field.field.node.document.field_year
     - node.type.document
@@ -45,7 +46,7 @@ content:
     third_party_settings: {  }
   field_description:
     type: text_textarea
-    weight: 51
+    weight: 15
     region: content
     settings:
       rows: 5
@@ -56,6 +57,16 @@ content:
     weight: 7
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_genre:
+    type: entity_reference_autocomplete_tags
+    weight: 12
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_label_editor:
     type: entity_reference_autocomplete_tags
@@ -82,7 +93,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -126,7 +137,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }

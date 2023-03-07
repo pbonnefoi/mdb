@@ -1,0 +1,29 @@
+uuid: 61bcc1d8-6bce-4761-8994-400c6694b931
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cover
+    - media.type.image
+    - node.type.us_map
+id: node.us_map.field_cover
+field_name: field_cover
+entity_type: node
+bundle: us_map
+label: Cover
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

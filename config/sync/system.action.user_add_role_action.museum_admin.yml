@@ -1,0 +1,14 @@
+uuid: 7910669f-6c42-4d89-8e5b-bc74bbedea64
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.museum_admin
+  module:
+    - user
+id: user_add_role_action.museum_admin
+label: 'Ajouter le rôle Administrateur du musée aux utilisateurs sélectionnés'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: museum_admin

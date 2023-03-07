@@ -50,6 +50,17 @@ function bulma_theme_suggestions_form_element_alter(&$suggestions, $vars) {
 }
 
 /**
+ * Implements hook_theme_suggestions_input_alter().
+ */
+function bulma_theme_suggestions_input_alter(&$suggestions, $vars) {
+  $element = $vars['element'];
+  if (isset($element['#attributes']['data-twig-suggestion'])) {
+    $suggestion_suffix = str_replace(['-'], '_', $element['#attributes']['data-twig-suggestion']);
+    $suggestions[] = 'input__' . $element['#type'] . '__' . $suggestion_suffix;
+  }
+}
+
+/**
  * Implements hook_views_view_alter().
  */
 function bulma_preprocess_views_view(&$vars) {

@@ -1,0 +1,10 @@
+uuid: befefe9d-e1eb-4601-bf38-f7cb6fee6bd1
+langcode: fr
+status: true
+dependencies: {  }
+id: albums
+label: Albums
+description: ''
+source_type: Discogs
+module: null
+shared_configuration: null

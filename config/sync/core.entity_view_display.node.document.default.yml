@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.document.field_cover
     - field.field.node.document.field_description
     - field.field.node.document.field_document_type
+    - field.field.node.document.field_genre
     - field.field.node.document.field_label_editor
     - field.field.node.document.field_year
     - node.type.document
@@ -50,6 +51,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_genre:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
     region: content
   field_label_editor:
     type: entity_reference_label

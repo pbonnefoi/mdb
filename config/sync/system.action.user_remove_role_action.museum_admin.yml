@@ -1,0 +1,14 @@
+uuid: e73c8c8e-83d2-4b9b-bd38-1f9572c8b10e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.museum_admin
+  module:
+    - user
+id: user_remove_role_action.museum_admin
+label: 'Remove the Administrateur du musée role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: museum_admin

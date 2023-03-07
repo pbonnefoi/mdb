@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: Page
 type: page
-description: ''
+description: 'Permet de créer une page avec du texte, des images ou des vidéos.'
 help: ''
 new_revision: false
 preview_mode: 1

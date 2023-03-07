@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.landing.field_cover
+    - field.field.node.landing.field_link
     - node.type.landing
   module:
+    - link
     - user
 id: node.landing.default
 targetEntityType: node
@@ -20,6 +22,18 @@ content:
       link: false
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_link:
+    type: link_separate
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 103
     region: content
   links:
     settings: {  }

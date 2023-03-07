@@ -12,6 +12,6 @@ features:
   favicon: true
   node_user_picture: false
 logo:
-  path: ''
+  path: 'public://la_maison_du_blues_logo.jpeg'
   url: ''
   use_default: false

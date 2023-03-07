@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: Document
 type: document
-description: ''
+description: 'Permet de rajouter un livre, un album, une affiche ou autre.'
 help: ''
 new_revision: false
 preview_mode: 1

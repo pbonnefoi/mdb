@@ -1,0 +1,23 @@
+uuid: 77c96ee9-6088-4891-baa3-c25668cd48c5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_pedagoblues
+    - node.type.page
+id: node.page.field_is_pedagoblues
+field_name: field_is_pedagoblues
+entity_type: node
+bundle: page
+label: 'Page Pedagoblues'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

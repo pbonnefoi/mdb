@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+<div class="section py-6">
+  <div class="container is-max-desktop">
+    <div class="content is-medium">
+      <form{{ attributes }}>
+        {{ children }}
+      </form>
+    </div>
+  </div>
+</div>

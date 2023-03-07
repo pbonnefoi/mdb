@@ -1,0 +1,8 @@
+uuid: 50642fac-2444-4fb6-abd3-0a4bf5947ca6
+langcode: fr
+status: true
+dependencies: {  }
+id: mdb-taxonomies-menu
+label: 'Gestions des catégories'
+description: ''
+locked: false

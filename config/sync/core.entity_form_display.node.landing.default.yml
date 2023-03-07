@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.landing.field_cover
+    - field.field.node.landing.field_link
     - node.type.landing
   module:
+    - link
     - media_library
+    - path
 id: node.landing.default
 targetEntityType: node
 bundle: landing
@@ -25,12 +28,26 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 123
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 2
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
@@ -70,5 +87,10 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }
